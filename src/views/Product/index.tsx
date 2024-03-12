@@ -19,7 +19,7 @@ const ProductView = ({ products }: { products: ProductType[] }) => {
                 <div className={styles.product__content__item__image}>
                   {/* <img src={`${product.image}`} alt={`${product.name}`} /> */}
                   <Image
-                    src={product.image}
+                    src={product.image ? product.image.toString() : ""}
                     alt={product.name}
                     width={500}
                     height={500}
